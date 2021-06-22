@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Welcome from "./screens/Welcome";
+import { OnboardingScreen } from "./onboarding/OnboardingScreen";
 
 function App() {
   return (
     <div className="App">
-      <Welcome />
+
+      <OnboardingScreen/>
     </div>
   );
 }

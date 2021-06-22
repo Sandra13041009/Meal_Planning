@@ -16,7 +16,7 @@ import { Restrictions } from "./Restrictions";
  * 
  *  * onSubmit: (timeOption: string, diet: string, restrictions: string[]) => void, optional: a callback to be run when the user submits their options
  */
-export function Onboarding(props) {
+export default function Onboarding(props) {
 
     // cookingTime state
     const [currentCookingTimeIndex, setCurrentCookingTimeIndex] = useState(0)
