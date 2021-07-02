@@ -9,23 +9,23 @@
  *  * Un-TS this file
  */
 
-import './ScreenTitle.css'
-import { Button } from "react-bootstrap"
+import "./ScreenTitle.css";
+import { Button } from "react-bootstrap";
 
 export type ScreenTitleProps = {
-    title: string,
-    onBackButtonClick?: () => void
-}
+  title: string;
+  onBackButtonClick?: () => void;
+};
 
 export function ScreenTitle(props: ScreenTitleProps) {
-    return <div className="screen-title">
-        {
-            props.onBackButtonClick !== undefined && props.onBackButtonClick !== null ?
-                <Button onClick={props.onBackButtonClick}>
-                    [back]
-                </Button>
-                : ''
-        }
-        <h1>{props.title}</h1>
+  return (
+    <div className="screen-title">
+      {props.onBackButtonClick !== undefined &&
+      props.onBackButtonClick !== null ? (
+        <Button onClick={props.onBackButtonClick}>[back]</Button>
+      ) : (
+        ""
+      )}
     </div>
+  );
 }

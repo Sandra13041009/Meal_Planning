@@ -1,7 +1,7 @@
 /**
  * A wrapper for each Onboarding page. It displays
  * the page title, prompt, and instruction.
- * 
+ *
  * @param {{
  *  prompt: string,
  *  instruction: string,
@@ -9,11 +9,18 @@
  * }} props
  */
 export function OnboardingScreen(props) {
-    return <>
-        <h1>Let's get you started!</h1>
-        <h2>{props.prompt}</h2>
-        <span>({props.instruction})</span>
+  return (
+    <div className="Onboarding">
+      <h1>
+        <strong>Let's get you started!</strong>
+      </h1>
 
-        <div>{props.children}</div>
-    </>
+      <div className="subheading">
+        <h2 className="Subheading">{props.prompt}</h2>
+      </div>
+      <span>({props.instruction})</span>
+
+      <div>{props.children}</div>
+    </div>
+  );
 }

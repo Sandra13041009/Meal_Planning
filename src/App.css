@@ -1,3 +1,43 @@
 .App {
   text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 505px;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+h1 {
+  font-size: 24px;
+
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #d95d3b;
+}
+.Subheading {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.Onboarding {
+  margin-top: 79px;
+}
+
+.Dietbtn {
+  border-radius: 50%;
+  height: 90px;
+  width: 89.55883026123047px;
+  left: 198px;
+  top: 209px;
+  background-color: #e5e5e5;
+  padding-bottom: 20px;
+  border-style: none;
+  margin-bottom: 30px;
 }
